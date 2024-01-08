@@ -1,12 +1,6 @@
-# 2908
-## 1
+## 3
 A, B = map(str, input().split())
-new_A = ''
-for i in A :
-    new_A = i + new_A
-
-new_B = ''
-for i in B :
-    new_B = i + new_B 
+new_A = A[::-1]
+new_B = B[::-1]
 
 print(max(new_A, new_B))
